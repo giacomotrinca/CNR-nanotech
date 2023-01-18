@@ -14,10 +14,15 @@ A PBS job script has a specific structure and contains various PBS directives an
 #!/bin/bash
 
 #PBS Directives
+
 #PBS -N job_name
+
 #PBS -l nodes=1:ppn=8
+
 #PBS -l walltime=12:00:00
+
 #PBS -j oe
+
 #PBS -q queue_name
 
 # Job Commands
