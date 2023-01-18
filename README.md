@@ -1,4 +1,4 @@
-#PBS Job Script Guide
+PBS Job Script Guide
 
 PBS (Portable Batch System) is a software used to manage and schedule jobs on a cluster or supercomputer. This guide will show you how to write a job script for PBS using the new syntax.
 Prerequisites
@@ -11,7 +11,6 @@ Script Structure
 
 A PBS job script has a specific structure and contains various PBS directives and commands. A basic structure for a job script looks like this:
 
-#-------------------------------------------------------------
 #!/bin/bash
 
 #PBS Directives
@@ -23,9 +22,9 @@ A PBS job script has a specific structure and contains various PBS directives an
 
 # Job Commands
 cd $PBS_O_WORKDIR
+
 ./my_executable
 
-#---------------------------------------------------------------
 ° The first line specifies the shell that will be used to interpret the script. In this example, it is bash.
 ° The #PBS directives specify various job properties such as the job name, number of nodes and processors
   per node, walltime, and queue name.
