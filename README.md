@@ -33,7 +33,9 @@ cd $PBS_O_WORKDIR
 ° The first line specifies the shell that will be used to interpret the script. In this example, it is bash.
 ° The #PBS directives specify various job properties such as the job name, number of nodes and processors
   per node, walltime, and queue name.
+  
 ° The cd command changes the current working directory to the directory from which the job was submitted.
+
 ° The ./my_executable command is the command that will be executed by the job. This can be replaced with 
   any command or script that you want to run.
 
